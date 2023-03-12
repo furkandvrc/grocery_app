@@ -49,4 +49,16 @@ abstract class AppLocalizationLabel {
   String get location;
 
   String get searchAnything;
+
+  String get enterYourMobileNumber;
+
+  String get subtextLoginScreen;
+
+  String get phoneNumber;
+
+  String get next;
+
+  String get submit;
+
+  String get finishGoodToGo;
 }

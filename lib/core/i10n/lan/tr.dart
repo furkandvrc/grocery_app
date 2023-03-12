@@ -33,4 +33,23 @@ class TrLocalization extends AppLocalizationLabel {
 
   @override
   String get searchAnything => "Herhangi Bir Şey Ara";
+
+  @override
+  String get enterYourMobileNumber => "Telefon Numaranı Gir";
+
+  @override
+  String get subtextLoginScreen =>
+      "Sizi doğrulamamız gerekiyor. Size tek seferlik bir doğrulama kodu göndereceğiz.";
+
+  @override
+  String get phoneNumber => "Telefon Numarası";
+
+  @override
+  String get next => "İleri";
+
+  @override
+  String get submit => "Gönder";
+
+  @override
+  String get finishGoodToGo => "Bitti, Hoşgeldiniz";
 }

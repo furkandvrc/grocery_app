@@ -29,4 +29,23 @@ class EnLocalization extends AppLocalizationLabel {
 
   @override
   String get searchAnything => "Search Anything";
+
+  @override
+  String get enterYourMobileNumber => "Enter your mobile number";
+
+  @override
+  String get subtextLoginScreen =>
+      "We need to verify you. We will send you a one time verification code.";
+
+  @override
+  String get phoneNumber => "Phone Number";
+
+  @override
+  String get next => "Next";
+
+  @override
+  String get submit => "Submit";
+
+  @override
+  String get finishGoodToGo => "Finish, Good to go";
 }
