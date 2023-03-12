@@ -71,7 +71,7 @@ class SplashScreenController extends GetxController {
   .listen((User? user) {
     if (user == null) {
       Navigator.pushNamedAndRemoveUntil(
-        context, Screens.instance.main.loginScreen, (route) => false);
+        context, Screens.instance.main.mainScreen, (route) => false);
     } else {
       Navigator.pushNamedAndRemoveUntil(
         context, Screens.instance.main.mainScreen, (route) => false);
