@@ -29,6 +29,13 @@
             {
               "client_id": "828656979428-eh5vfquq3vs2bgajk4d2k4q9aa21anie.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "828656979428-gj6dsb799srlsltg0raf0552e8pb0357.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.furkan.groceryApp"
+              }
             }
           ]
         }

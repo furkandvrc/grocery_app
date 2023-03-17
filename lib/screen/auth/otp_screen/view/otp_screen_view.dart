@@ -12,8 +12,8 @@ import '../../../../app/components/buttons/login_register_button.dart';
 import '../../../../app/components/textfield/form_textfield.dart';
 import '../../../../app/theme/colors.dart';
 
-class LoginScreenView extends GetView<LoginScreenController> {
-  const LoginScreenView({super.key});
+class OtpScreenView extends GetView<LoginScreenController> {
+  const OtpScreenView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,23 +27,20 @@ class LoginScreenView extends GetView<LoginScreenController> {
         surfaceTintColor: AppColor.background.withAlpha(0),
         color: AppColor.background.withAlpha(0),
         child: GestureDetector(
-            onTap: () {
-              print("+90${textEditing.text}");
-              controller.verifyPhoneNumber(textEditing.text);
-            },
-            child: LoginRegisterButton(text: AppLocalization.getLabels.next)),
+            onTap: () {},
+            child: LoginRegisterButton(text: AppLocalization.getLabels.submit)),
       ),
       body: GlassMorphicContainer(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset(loginScreenBg),
+          SvgPicture.asset(otpScreenBg),
           Padding(
             padding: const EdgeInsets.only(left: paddingS, top: paddingXXXXL),
             child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  AppLocalization.getLabels.enterVerificationNumber,
+                  AppLocalization.getLabels.enterYourMobileNumber,
                   style: s18W700(),
                 )),
           ),
@@ -52,7 +49,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
                 left: paddingS, top: paddingS, bottom: paddingS),
             child: Align(
                 alignment: Alignment.centerLeft,
-                child: Text(AppLocalization.getLabels.weHaveSentSmsTo,
+                child: Text(AppLocalization.getLabels.subtextLoginScreen,
                     style: s12W500())),
           ),
           Padding(

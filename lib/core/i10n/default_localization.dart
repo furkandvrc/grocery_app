@@ -52,6 +52,8 @@ abstract class AppLocalizationLabel {
 
   String get enterYourMobileNumber;
 
+  String get enterVerificationNumber;
+
   String get subtextLoginScreen;
 
   String get phoneNumber;
@@ -61,4 +63,6 @@ abstract class AppLocalizationLabel {
   String get submit;
 
   String get finishGoodToGo;
+
+  String get weHaveSentSmsTo;
 }

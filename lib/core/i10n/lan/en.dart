@@ -34,6 +34,9 @@ class EnLocalization extends AppLocalizationLabel {
   String get enterYourMobileNumber => "Enter your mobile number";
 
   @override
+  String get enterVerificationNumber => "Enter Verification Number";
+
+  @override
   String get subtextLoginScreen =>
       "We need to verify you. We will send you a one time verification code.";
 
@@ -48,4 +51,7 @@ class EnLocalization extends AppLocalizationLabel {
 
   @override
   String get finishGoodToGo => "Finish, Good to go";
+
+  @override
+  String get weHaveSentSmsTo => "We have sent SMS to:";
 }

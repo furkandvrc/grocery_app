@@ -8,7 +8,8 @@ import 'package:grocery_app/core/i10n/i10n.dart';
 import '../../constants/app/app_constants.dart';
 
 class LoginRegisterButton extends StatelessWidget {
-  const LoginRegisterButton({super.key});
+  const LoginRegisterButton({super.key, required this.text});
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class LoginRegisterButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            AppLocalization.getLabels.next,
+            text,
             style: s16W700().copyWith(color: Colors.white),
           ),
         ],

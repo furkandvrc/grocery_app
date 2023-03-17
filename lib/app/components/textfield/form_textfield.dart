@@ -7,11 +7,16 @@ import '../../constants/app/padding_and_radius_size.dart';
 import '../../theme/colors.dart';
 
 class FormTextField extends StatelessWidget {
-  const FormTextField({super.key});
+  const FormTextField({
+    super.key,
+    required this.myController,
+  });
+
+  final TextEditingController myController;
 
   @override
   Widget build(BuildContext context) {
-    late var countryCode;
+    late String? countryCode;
     return Container(
       decoration: BoxDecoration(
           color: Colors.transparent.withOpacity(0.05),
@@ -29,7 +34,6 @@ class FormTextField extends StatelessWidget {
               countryCode = code?.code;
             },
             theme: CountryTheme(
-              initialSelection: "+90",
               isShowTitle: false,
               isShowCode: false,
               isDownIcon: false,
@@ -37,6 +41,7 @@ class FormTextField extends StatelessWidget {
           ),
           Flexible(
               child: TextFormField(
+            controller: myController,
             cursorColor: AppColor.lightText,
             textInputAction: TextInputAction.search,
             decoration: InputDecoration(

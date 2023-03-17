@@ -29,13 +29,13 @@ class TrLocalization extends AppLocalizationLabel {
   String get location => "Sarıkanarya sokak,Kadıköy,İstanbul/Türkiye";
 
   @override
-  String get groceryPlus => "Grocery Plus";
-
-  @override
   String get searchAnything => "Herhangi Bir Şey Ara";
 
   @override
   String get enterYourMobileNumber => "Telefon Numaranı Gir";
+
+  @override
+  String get enterVerificationNumber => "Doğrulama Kodunu Gir";
 
   @override
   String get subtextLoginScreen =>
@@ -52,4 +52,7 @@ class TrLocalization extends AppLocalizationLabel {
 
   @override
   String get finishGoodToGo => "Bitti, Hoşgeldiniz";
+  
+  @override
+  String get weHaveSentSmsTo => "Şu numaraya SMS gönderdik:";
 }
