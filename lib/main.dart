@@ -1,9 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:grocery_app/app/theme/colors.dart';
 import 'app/constants/app/app_constants.dart';
 import 'app/libs/locale_manager/locale_manager.dart';
 import 'app/navigation/screens.dart';
@@ -28,7 +26,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      
       builder: (BuildContext context, BoxConstraints constraints) {
         SizeConfig().setScreenSizeFromConstraints(constraints);
         return ValueListenableBuilder<Locale>(
