@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:glassmorphism/glassmorphism.dart';
+import 'package:grocery_app/app/navigation/size_config.dart';
 import '../../constants/assets/assets.dart';
 import '../../theme/colors.dart';
 
@@ -10,7 +11,7 @@ class GlassMorphicContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: double.infinity,
+        height: SizeConfig.screenHeight,
         width: double.infinity,
         child: Stack(children: [
           Image.asset(
@@ -33,7 +34,7 @@ class GlassMorphicContainer extends StatelessWidget {
                 end: Alignment.bottomRight,
                 colors: [
                   AppColor.background.withAlpha(190),
-                  AppColor.background.withAlpha(230),
+                  AppColor.background.withAlpha(255),
                 ],
                 stops: const [
                   0.1,

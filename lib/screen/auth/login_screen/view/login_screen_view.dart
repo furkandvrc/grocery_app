@@ -1,4 +1,3 @@
-import 'package:country_list_pick/support/code_country.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -10,6 +9,7 @@ import 'package:grocery_app/core/i10n/i10n.dart';
 import 'package:grocery_app/screen/auth/login_screen/controller/login_screen_controller.dart';
 import '../../../../app/components/buttons/login_register_button.dart';
 import '../../../../app/components/textfield/form_textfield.dart';
+import '../../../../app/navigation/screens.dart';
 import '../../../../app/theme/colors.dart';
 
 class LoginScreenView extends GetView<LoginScreenController> {
@@ -17,7 +17,6 @@ class LoginScreenView extends GetView<LoginScreenController> {
 
   @override
   Widget build(BuildContext context) {
-    var textEditing = TextEditingController();
     return Scaffold(
       extendBodyBehindAppBar: true,
       extendBody: true,
@@ -28,8 +27,10 @@ class LoginScreenView extends GetView<LoginScreenController> {
         color: AppColor.background.withAlpha(0),
         child: GestureDetector(
             onTap: () {
-              print("+90${textEditing.text}");
-              controller.verifyPhoneNumber(textEditing.text);
+              Navigator.pushNamed(
+                context,
+                Screens.instance.main.otpScreen,
+              );
             },
             child: LoginRegisterButton(text: AppLocalization.getLabels.next)),
       ),
@@ -58,7 +59,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
           Padding(
             padding: const EdgeInsets.only(bottom: paddingXL),
             child: FormTextField(
-              myController: textEditing,
+              myController: controller.textEditing,
             ),
           ),
         ],

@@ -43,7 +43,7 @@ class FormTextField extends StatelessWidget {
               child: TextFormField(
             controller: myController,
             cursorColor: AppColor.lightText,
-            textInputAction: TextInputAction.search,
+            textInputAction: TextInputAction.go,
             decoration: InputDecoration(
                 hintText: AppLocalization.getLabels.phoneNumber),
           ))

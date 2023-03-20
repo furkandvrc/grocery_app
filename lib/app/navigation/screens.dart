@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:grocery_app/app/navigation/page_navigation.dart';
 import 'package:grocery_app/screen/auth/login_screen/login_screen.dart';
+import 'package:grocery_app/screen/auth/otp_screen/otp_screen.dart';
+import '../../screen/auth/register_screen/view/register_screen_view.dart';
 import '../../screen/categories/categories_screen.dart';
 import '../../screen/home/home_screen.dart';
 import '../../screen/landing/splash_screen.dart';
@@ -43,6 +45,7 @@ class _MainScreens with PageNavigation {
   final String settingsScreen = "settings_screen";
   final String loginScreen = "login_screen";
   final String registerScreen = "register_screen";
+  final String otpScreen = "otp_screen";
 
   Route<dynamic>? onGenerateRoute(RouteSettings setting) {
     if (setting.name == init) {
@@ -53,11 +56,13 @@ class _MainScreens with PageNavigation {
       return goToPage(const HomeScreen(), setting);
     } else if (setting.name == loginScreen) {
       return goToPage(const LoginScreen(), setting);
+    } else if (setting.name == registerScreen) {
+      return goToPage(const RegisterScreenView(), setting);
     } else if (setting.name == homeScreen) {
       return goToPage(const HomeScreen(), setting);
-    } else if (setting.name == homeScreen) {
-      return goToPage(const HomeScreen(), setting);
-    }else {
+    } else if (setting.name == otpScreen) {
+      return goToPage(const OtpScreen(), setting);
+    } else {
       return goToPage(
         const UnknownRouteScreen(),
         setting,
