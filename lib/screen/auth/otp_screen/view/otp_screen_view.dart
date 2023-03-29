@@ -28,10 +28,9 @@ class OtpScreenView extends GetView<OtpScreenController> {
         color: AppColor.background.withAlpha(0),
         child: GestureDetector(
             onTap: () async {
-              Navigator.pushNamed(
-                context,
-                Screens.instance.main.otpScreen,
-              );
+              await controller.loginAnonymously();
+              Navigator.pushNamedAndRemoveUntil(
+                  context, Screens.instance.main.mainScreen, (route) => false);
             },
             child: LoginRegisterButton(text: AppLocalization.getLabels.submit)),
       ),

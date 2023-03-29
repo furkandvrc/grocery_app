@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../app/constants/app/app_constants.dart';
 import '../../../app/constants/app/padding_and_radius_size.dart';
+import '../../../app/model/home_screen_categories_model.dart';
 import '../../../app/theme/text_style.dart';
 import '../../../app/components/background/glass_morphic_container.dart';
 import '../components/widgets/location_icon.dart';
@@ -53,7 +54,11 @@ class HomeScreenView extends GetView<HomeScreenController> {
               ),
               const SearchBox(),
               Column(
-                children: [],
+                children: const [
+                  HomeScreenCategoriesModel(
+                    documentId: "C6pTuiwTdZcSCkQakNzO",
+                  )
+                ],
               ),
             ],
           ),
