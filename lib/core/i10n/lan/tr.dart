@@ -26,7 +26,7 @@ class TrLocalization extends AppLocalizationLabel {
   String get yourLocation => "Konumun";
 
   @override
-  String get location => "Sarıkanarya sokak,Kadıköy,İstanbul/Türkiye";
+  String get location => "Sarıkanarya sokak,Kadıköy,İstanbul";
 
   @override
   String get searchAnything => "Herhangi Bir Şey Ara";
@@ -52,7 +52,10 @@ class TrLocalization extends AppLocalizationLabel {
 
   @override
   String get finishGoodToGo => "Bitti, Hoşgeldiniz";
-  
+
   @override
   String get weHaveSentSmsTo => "Şu numaraya SMS gönderdik:";
+
+  @override
+  String get trOrEng => "TR";
 }

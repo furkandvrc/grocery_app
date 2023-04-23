@@ -4,7 +4,7 @@ import '../../app/constants/enum/cache_key_enum.dart';
 import '../../app/libs/locale_manager/locale_manager.dart';
 import 'lan/tr.dart';
 
-const kDefaultLocal = Locale('en');
+const kDefaultLocal = Locale('tr');
 
 const Map<String, AppLocalizationLabel> supportedLocalization = {
   'tr': TrLocalization(),
@@ -65,4 +65,6 @@ abstract class AppLocalizationLabel {
   String get finishGoodToGo;
 
   String get weHaveSentSmsTo;
+
+  String get trOrEng;
 }

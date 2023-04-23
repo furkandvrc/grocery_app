@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../app/constants/app/app_constants.dart';
 import '../../../app/constants/app/padding_and_radius_size.dart';
-import '../../../app/model/home_screen_categories_model.dart';
+import '../../../app/models/home_screen_categories_model.dart';
 import '../../../app/theme/text_style.dart';
 import '../../../app/components/background/glass_morphic_container.dart';
+import '../../../core/i10n/i10n.dart';
 import '../components/widgets/location_icon.dart';
 import '../components/widgets/location_texts.dart';
 import '../components/widgets/search_box.dart';
@@ -56,7 +57,7 @@ class HomeScreenView extends GetView<HomeScreenController> {
               Column(
                 children: const [
                   HomeScreenCategoriesModel(
-                    documentId: "C6pTuiwTdZcSCkQakNzO",
+                    
                   )
                 ],
               ),

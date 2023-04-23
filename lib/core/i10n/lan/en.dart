@@ -54,4 +54,6 @@ class EnLocalization extends AppLocalizationLabel {
 
   @override
   String get weHaveSentSmsTo => "We have sent SMS to:";
+  @override
+  String get trOrEng => "EN";
 }
